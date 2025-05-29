@@ -1,0 +1,14 @@
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Compilación
+/target/
+/bin/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+.vscode/
