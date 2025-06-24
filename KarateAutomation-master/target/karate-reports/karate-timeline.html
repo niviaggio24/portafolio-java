@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"features\/ConfigDemo1[1:7]","start":1641564736452,"end":1641564736909,"title":"features\/ConfigDemo1[1:7] 09:12:16.452-09:12:16.909 Config demo 1"},{"id":2,"group":1,"content":"features\/ConfigDemo1[2:11]","start":1641564736920,"end":1641564738130,"title":"features\/ConfigDemo1[2:11] 09:12:16.920-09:12:18.130 Get Demo 1"},{"id":3,"group":1,"content":"features\/FirstTest[1:5]","start":1641564739595,"end":1641564739819,"title":"features\/FirstTest[1:5] 09:12:19.595-09:12:19.819 Test a Sample Get API"},{"id":4,"group":1,"content":"features\/Get[1:8]","start":1641564739915,"end":1641564740160,"title":"features\/Get[1:8] 09:12:19.915-09:12:20.160 Get Demo 1"},{"id":5,"group":1,"content":"features\/Get[2:19]","start":1641564740167,"end":1641564740403,"title":"features\/Get[2:19] 09:12:20.167-09:12:20.403 Get Demo 2"},{"id":6,"group":1,"content":"features\/Get[3:26]","start":1641564740410,"end":1641564740580,"title":"features\/Get[3:26] 09:12:20.410-09:12:20.580 Get Demo 3"},{"id":7,"group":1,"content":"features\/Get[4:34]","start":1641564740587,"end":1641564740873,"title":"features\/Get[4:34] 09:12:20.587-09:12:20.873 Get Demo 4"},{"id":8,"group":1,"content":"features\/Get[5:45]","start":1641564740876,"end":1641564741110,"title":"features\/Get[5:45] 09:12:20.876-09:12:21.110 Get Demo 5"},{"id":9,"group":1,"content":"features\/Delete[1:6]","start":1641564739011,"end":1641564739481,"title":"features\/Delete[1:6] 09:12:19.011-09:12:19.481 Delete demo 1"},{"id":10,"group":1,"content":"features\/Put[1:7]","start":1641564743925,"end":1641564744393,"title":"features\/Put[1:7] 09:12:23.925-09:12:24.393 put demo 1"},{"id":11,"group":1,"content":"features\/Post[1:9]","start":1641564741271,"end":1641564741753,"title":"features\/Post[1:9] 09:12:21.271-09:12:21.753 POST Demo 1"},{"id":12,"group":1,"content":"features\/Post[2:17]","start":1641564741761,"end":1641564742327,"title":"features\/Post[2:17] 09:12:21.761-09:12:22.327 POST Demo 2"},{"id":13,"group":1,"content":"features\/Post[3:25]","start":1641564742335,"end":1641564742859,"title":"features\/Post[3:25] 09:12:22.335-09:12:22.859 POST Demo 3"},{"id":14,"group":1,"content":"features\/Post[4:34]","start":1641564742866,"end":1641564743303,"title":"features\/Post[4:34] 09:12:22.866-09:12:23.303 POST Demo 4"},{"id":15,"group":1,"content":"features\/Post[5:45]","start":1641564743308,"end":1641564743802,"title":"features\/Post[5:45] 09:12:23.308-09:12:23.802 POST Demo 5"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+Escenarios
+
+- Longitud de la contraseña
+- Que solo contenga letras en mayusculas
+- Que solo contenga letras en minusculas 
+- Contenga ambas
+- Que solo contenga numeros
+- Que solo contenga letras en mayus y minuscul y numeros
+- Excluir caracteres ambiguos (I,i-Letra i en mayuscula y minuscula)
+			      (L,l,1-Letra L en mayuscula y minuscula, numero 1)
+                              (o -Letra o en minuscula mayuscula y cero)
+- Excluir caracteres especiales(<,>,{,}, [, ] entre otros).
+
+-
+
+
+
+
+
+
+

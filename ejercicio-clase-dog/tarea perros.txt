@@ -1,0 +1,28 @@
+Tarea:
+
+(Una clase sabe lo que tiene y lo que puede hacer)
+
+1. Crea un clase llamada dog. 
+
+2. El dog tiene como variables la edad del perro, el nombre del perro , el peso del perro y como ladra el perro
+
+3. Le ponemos un metodo a la clase perro que se llama ladrar. Este metodo imprimie la variable que tenga de ladrar
+
+4. En la clase dog test vamos hacer en el main un arreglo de perrosl, colocar un ciclo un while que va recorrer todas las posiciones de ese arreglo de perros y vamos a colocar a todos esos perros a ladrar
+
+5. Ejemplo " el perro pepito ladra asi, el perro juanito ladra asi.
+
+6. El ejercicio es que se pueda recorrer un arreglo de objetos invocando un metodo en particular y ver la diferencia que hay en acceder a las variable de cada control.
+
+7. Bonus, Cuantos perros ?? los que quiera es mas dejar parametrizado en una variable, cuantos perro quieren que ladren.
+
+8. si mete dos perros el arreglo me va retornar dos perros.
+
+9. Crear otro metodo que reciba por parametro cuantos perro quiere digamos 50 perros, el man crea 50 perros con nombres de perros, edades, pesos y ladridos de forma aleatoria.
+
+
+
+
+
+
+
